@@ -2,12 +2,11 @@
 
 python3 .scripts/populate-location.py || exit 1
 
-if [ -z "$(git status --porcelain -- location.json)" ]; then
+git add location.json
+if git diff --cached --quiet -- location.json; then
   exit 0
 fi
-
-git add location.json
-git commit --no-verify --no-gpg-sign -m "chore(data): sync location from journals"
+git commit --no-verify --no-gpg-sign -m "chore(data): sync location from journals" -- location.json
 
 echo "location.json was refreshed — run git push again to ship it" >&2
 exit 1

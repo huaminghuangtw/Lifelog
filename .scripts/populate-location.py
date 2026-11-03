@@ -1,14 +1,13 @@
-"""Copy each day's journal `location` into location.json.
-
-Only the dates already present in jdata.json are touched, so the file grows
-exactly as fast as the tracked lifelog does. Run by .githooks/pre-push.
+"""
+Copy each day's journal `location` into location.json.
+Only the dates already present in jdata.json are touched.
+Run by .githooks/pre-push.
 """
 
 import json
 import os
 import re
 import sys
-from collections import Counter
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[1]
@@ -27,20 +26,14 @@ LOCATION_LINE = re.compile(r"^location:[ \t]*(.+?)[ \t]*$", re.MULTILINE)
 FRONTMATTER = re.compile(r"\A---\r?\n(.*?)\r?\n---", re.DOTALL)
 
 
-def journal_path(day: str) -> Path | None:
-    year, month = day[:4], int(day[5:7])
-    folders = sorted((JOURNAL / year).glob(f"{month:02d}-*"))
-    return folders[0] / f"{day.replace('-', '_')}.md" if folders else None
-
-
 def location_of(day: str) -> str | None:
-    path = journal_path(day)
+    year, month = day[:4], f"{int(day[5:7]):02d}"
+    folder = next(iter(sorted((JOURNAL / year).glob(f"{month}-*"))), None)
+    path = folder / f"{day.replace('-', '_')}.md" if folder else None
     if not path or not path.is_file():
         return None
     block = FRONTMATTER.match(path.read_text(encoding="utf-8"))
-    if not block:
-        return None
-    line = LOCATION_LINE.search(block.group(1))
+    line = LOCATION_LINE.search(block.group(1)) if block else None
     return line.group(1).strip("\"'") if line else None
 
 
@@ -51,35 +44,20 @@ def main() -> int:
         json.loads(target.read_text(encoding="utf-8")) if target.is_file() else {}
     )
 
-    updated = dict(current)
-    missing, unchanged = [], 0
-    for day in tracked:
-        place = location_of(day)
-        if place is None:
-            if day not in updated:
-                missing.append(day)
-            else:
-                unchanged += 1
-            continue
-        if updated.get(day) == place:
-            unchanged += 1
-            continue
-        updated[day] = place
+    found = {day: place for day in tracked if (place := location_of(day))}
+    updated = current | found
+    gaps = len(tracked) - len(found)
 
-    print(f"{len(updated) - unchanged} mapped, {unchanged} unchanged")
-    for place, days in Counter(updated.values()).most_common():
-        print(f"  {days:3d}  {place}")
-    for day in missing:
-        print(f"  no journal location: {day}")
-
-    if not missing and updated == current:
-        print("location.json is up to date")
+    if updated == current:
+        print(f"unchanged: {len(updated)} days, {gaps} without a journal")
         return 0
 
-    ordered = {day: updated[day] for day in sorted(updated)}
+    written = sum(1 for day, place in found.items() if current.get(day) != place)
     target.write_text(
-        json.dumps(ordered, indent=4, ensure_ascii=False) + "\n", encoding="utf-8"
+        json.dumps(dict(sorted(updated.items())), indent=4, ensure_ascii=False) + "\n",
+        encoding="utf-8",
     )
+    print(f"location.json: {len(updated)} days, {written} written, {gaps} without a journal")
     return 0
 
 
