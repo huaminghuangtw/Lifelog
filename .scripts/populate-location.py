@@ -1,7 +1,6 @@
 """
 Copy each day's journal `location` into location.json.
 Only the dates already present in jdata.json are touched.
-Run by .githooks/pre-push.
 """
 
 import json
@@ -41,7 +40,8 @@ def main() -> int:
     tracked = json.loads((REPO / "jdata.json").read_text(encoding="utf-8"))
     target = REPO / "location.json"
     current = (
-        json.loads(target.read_text(encoding="utf-8")) if target.is_file() else {}
+        json.loads(target.read_text(encoding="utf-8")
+                   ) if target.is_file() else {}
     )
 
     found = {day: place for day in tracked if (place := location_of(day))}
@@ -52,12 +52,15 @@ def main() -> int:
         print(f"unchanged: {len(updated)} days, {gaps} without a journal")
         return 0
 
-    written = sum(1 for day, place in found.items() if current.get(day) != place)
+    written = sum(1 for day, place in found.items()
+                  if current.get(day) != place)
     target.write_text(
-        json.dumps(dict(sorted(updated.items())), indent=4, ensure_ascii=False) + "\n",
+        json.dumps(dict(sorted(updated.items())),
+                   indent=4, ensure_ascii=False) + "\n",
         encoding="utf-8",
     )
-    print(f"location.json: {len(updated)} days, {written} written, {gaps} without a journal")
+    print(
+        f"location.json: {len(updated)} days, {written} written, {gaps} without a journal")
     return 0
 
 
