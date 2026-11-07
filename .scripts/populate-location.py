@@ -49,7 +49,8 @@ def main() -> int:
     gaps = len(tracked) - len(found)
 
     if updated == current:
-        print(f"unchanged: {len(updated)} days, {gaps} without a journal")
+        print(
+            f"location.json: unchanged, {len(updated)} days, {gaps} without a journal")
         return 0
 
     written = sum(1 for day, place in found.items()
@@ -60,7 +61,8 @@ def main() -> int:
         encoding="utf-8",
     )
     print(
-        f"location.json: {len(updated)} days, {written} written, {gaps} without a journal")
+        f"location.json: updated, {written} of {len(updated)} days, {gaps} without a journal"
+    )
     return 0
 
 
