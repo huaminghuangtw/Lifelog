@@ -46,23 +46,23 @@ def main() -> int:
 
     found = {day: place for day in tracked if (place := location_of(day))}
     updated = current | found
-    gaps = len(tracked) - len(found)
-
-    if updated == current:
-        print(
-            f"location.json: unchanged, {len(updated)} days, {gaps} without a journal")
-        return 0
-
+    missing = [day for day in tracked if day not in found]
     written = sum(1 for day, place in found.items()
                   if current.get(day) != place)
-    target.write_text(
-        json.dumps(dict(sorted(updated.items())),
-                   indent=4, ensure_ascii=False) + "\n",
-        encoding="utf-8",
-    )
+
+    if written:
+        target.write_text(
+            json.dumps(dict(sorted(updated.items())),
+                       indent=4, ensure_ascii=False) + "\n",
+            encoding="utf-8",
+        )
+    state = (f"updated, {written} of {len(updated)} days" if written
+             else f"unchanged, {len(updated)} days")
     print(
-        f"location.json: updated, {written} of {len(updated)} days, {gaps} without a journal"
+        f"location.json: {state}, {len(missing)} without a journal"
     )
+    if missing:
+        print(f"gaps: {', '.join(missing)}")
     return 0
 
 
