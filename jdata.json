@@ -14,20 +14,6 @@
         "endTheDayAt": "2026-11-02T19:59:14",
         "bedTime": "2026-11-02T22:30:00"
     },
-    "2026-09-15": {
-        "startTheDayAt": "2026-09-15T12:47:15",
-        "wakeUpTime": "2026-09-15T04:30:00",
-        "firstUnplugPhoneAt": "2026-09-15T05:33:26",
-        "endTheDayAt": "2026-09-15T19:19:32",
-        "bedTime": "2026-09-15T20:50:00",
-        "lastPlugPhoneAt": "2026-09-15T19:31:14"
-    },
-    "2026-09-08": {
-        "startTheDayAt": "2026-09-08T10:11:44",
-        "wakeUpTime": "2026-09-08T04:30:00",
-        "firstUnplugPhoneAt": "2026-09-08T06:07:05",
-        "bedTime": "2026-09-08T22:00:00"
-    },
     "2026-10-29": {
         "startTheDayAt": "2026-10-29T12:19:38",
         "wakeUpTime": "2026-10-29T06:15:00",
@@ -50,6 +36,14 @@
         "bedTime": "2026-09-30T21:20:00",
         "lastPlugPhoneAt": "2026-09-30T19:09:18"
     },
+    "2026-11-10": {
+        "startTheDayAt": "2026-11-10T12:09:43",
+        "wakeUpTime": "2026-11-10T06:50:00",
+        "firstUnplugPhoneAt": "2026-11-10T11:46:05",
+        "endTheDayAt": "2026-11-10T18:28:37",
+        "bedTime": "2026-11-10T22:45:00",
+        "lastPlugPhoneAt": "2026-11-10T19:23:02"
+    },
     "2026-09-23": {
         "startTheDayAt": "2026-09-23T12:34:22",
         "wakeUpTime": "2026-09-23T06:30:00",
@@ -57,13 +51,6 @@
         "endTheDayAt": "2026-09-23T18:32:57",
         "bedTime": "2026-09-23T22:30:00",
         "lastPlugPhoneAt": "2026-09-23T18:49:39"
-    },
-    "2026-11-03": {
-        "endTheDayAt": "2026-11-03T18:11:31",
-        "startTheDayAt": "2026-11-03T12:05:32",
-        "wakeUpTime": "2026-11-03T06:15:00",
-        "bedTime": "2026-11-03T22:00:00",
-        "lastPlugPhoneAt": "2026-11-03T18:29:09"
     },
     "2026-10-02": {
         "startTheDayAt": "2026-10-02T15:10:37",
@@ -73,6 +60,13 @@
         "bedTime": "2026-10-02T20:40:00",
         "lastPlugPhoneAt": "2026-10-02T19:06:58"
     },
+    "2026-11-03": {
+        "endTheDayAt": "2026-11-03T18:11:31",
+        "startTheDayAt": "2026-11-03T12:05:32",
+        "wakeUpTime": "2026-11-03T06:15:00",
+        "bedTime": "2026-11-03T22:00:00",
+        "lastPlugPhoneAt": "2026-11-03T18:29:09"
+    },
     "2026-09-16": {
         "startTheDayAt": "2026-09-16T12:53:17",
         "wakeUpTime": "2026-09-16T06:30:00",
@@ -81,14 +75,6 @@
         "bedTime": "2026-09-16T22:00:00",
         "lastPlugPhoneAt": "2026-09-16T21:06:22"
     },
-    "2026-09-09": {
-        "startTheDayAt": "2026-09-09T12:50:25",
-        "wakeUpTime": "2026-09-09T06:45:00",
-        "firstUnplugPhoneAt": "2026-09-09T12:24:07",
-        "endTheDayAt": "2026-09-09T20:24:57",
-        "bedTime": "2026-09-09T22:45:00",
-        "lastPlugPhoneAt": "2026-09-09T20:56:40"
-    },
     "2026-09-24": {
         "startTheDayAt": "2026-09-24T12:30:18",
         "wakeUpTime": "2026-09-24T07:20:00",
@@ -96,6 +82,14 @@
         "endTheDayAt": "2026-09-24T18:35:27",
         "bedTime": "2026-09-24T21:40:00",
         "lastPlugPhoneAt": "2026-09-24T18:58:24"
+    },
+    "2026-11-11": {
+        "startTheDayAt": "2026-11-11T12:07:19",
+        "wakeUpTime": "2026-11-11T06:00:00",
+        "firstUnplugPhoneAt": "2026-11-11T11:45:20",
+        "endTheDayAt": "2026-11-11T19:01:54",
+        "bedTime": "2026-11-11T21:15:00",
+        "lastPlugPhoneAt": "2026-11-11T19:34:35"
     },
     "2026-11-04": {
         "startTheDayAt": "2026-11-04T12:04:32",
@@ -134,19 +128,20 @@
         "bedTime": "2026-09-25T22:10:00",
         "lastPlugPhoneAt": "2026-09-25T18:58:46"
     },
+    "2026-11-12": {
+        "startTheDayAt": "2026-11-12T12:01:09",
+        "wakeUpTime": "2026-11-12T05:45:00",
+        "firstUnplugPhoneAt": "2026-11-12T11:52:59",
+        "endTheDayAt": "2026-11-12T18:34:59",
+        "bedTime": "2026-11-12T21:15:00",
+        "lastPlugPhoneAt": "2026-11-12T19:03:35"
+    },
     "2026-11-05": {
         "startTheDayAt": "2026-11-05T12:13:03",
         "wakeUpTime": "2026-11-05T06:00:00",
         "firstUnplugPhoneAt": "2026-11-05T10:58:40",
-        "endTheDayAt": "2026-11-05T17:57:52"
-    },
-    "2026-09-18": {
-        "startTheDayAt": "2026-09-18T12:54:01",
-        "wakeUpTime": "2026-09-18T06:00:00",
-        "firstUnplugPhoneAt": "2026-09-18T07:36:43",
-        "endTheDayAt": "2026-09-18T18:56:35",
-        "bedTime": "2026-09-18T21:45:00",
-        "lastPlugPhoneAt": "2026-09-18T20:45:37"
+        "endTheDayAt": "2026-11-05T17:57:52",
+        "bedTime": "2026-11-06T01:40:00"
     },
     "2026-10-11": {
         "endTheDayAt": "2026-10-11T20:34:40",
@@ -161,6 +156,14 @@
         "bedTime": "2026-10-04T23:30:00",
         "lastPlugPhoneAt": "2026-10-04T23:30:47"
     },
+    "2026-09-18": {
+        "startTheDayAt": "2026-09-18T12:54:01",
+        "wakeUpTime": "2026-09-18T06:00:00",
+        "firstUnplugPhoneAt": "2026-09-18T07:36:43",
+        "endTheDayAt": "2026-09-18T18:56:35",
+        "bedTime": "2026-09-18T21:45:00",
+        "lastPlugPhoneAt": "2026-09-18T20:45:37"
+    },
     "2026-09-19": {
         "startTheDayAt": "2026-09-19T16:03:09",
         "wakeUpTime": "2026-09-19T05:00:00",
@@ -169,13 +172,19 @@
         "bedTime": "2026-09-19T21:30:00",
         "lastPlugPhoneAt": "2026-09-19T21:30:17"
     },
-    "2026-09-26": {
-        "startTheDayAt": "2026-09-26T12:51:03",
-        "wakeUpTime": "2026-09-26T06:00:00",
-        "firstUnplugPhoneAt": "2026-09-26T12:43:04",
-        "endTheDayAt": "2026-09-26T18:34:55",
-        "bedTime": "2026-09-26T21:00:00",
-        "lastPlugPhoneAt": "2026-09-26T19:08:24"
+    "2026-11-06": {
+        "endTheDayAt": "2026-11-06T18:15:53",
+        "startTheDayAt": "2026-11-06T12:00:57",
+        "wakeUpTime": "2026-11-06T06:40:00",
+        "bedTime": "2026-11-06T23:00:00"
+    },
+    "2026-11-13": {
+        "startTheDayAt": "2026-11-13T12:02:35",
+        "wakeUpTime": "2026-11-13T06:00:00",
+        "firstUnplugPhoneAt": "2026-11-13T12:02:14",
+        "endTheDayAt": "2026-11-13T18:32:09",
+        "bedTime": "2026-11-13T21:10:00",
+        "lastPlugPhoneAt": "2026-11-13T18:50:26"
     },
     "2026-10-12": {
         "endTheDayAt": "2026-10-12T21:33:37",
@@ -192,11 +201,31 @@
         "bedTime": "2026-10-05T21:15:00",
         "lastPlugPhoneAt": "2026-10-05T18:56:57"
     },
+    "2026-09-26": {
+        "startTheDayAt": "2026-09-26T12:51:03",
+        "wakeUpTime": "2026-09-26T06:00:00",
+        "firstUnplugPhoneAt": "2026-09-26T12:43:04",
+        "endTheDayAt": "2026-09-26T18:34:55",
+        "bedTime": "2026-09-26T21:00:00",
+        "lastPlugPhoneAt": "2026-09-26T19:08:24"
+    },
     "2026-09-27": {
         "endTheDayAt": "2026-09-27T21:26:52",
         "wakeUpTime": "2026-09-27T03:00:00",
         "bedTime": "2026-09-27T23:00:00",
         "lastPlugPhoneAt": "2026-09-27T22:47:02"
+    },
+    "2026-11-14": {
+        "startTheDayAt": "2026-11-14T12:32:14",
+        "wakeUpTime": "2026-11-14T05:50:00",
+        "firstUnplugPhoneAt": "2026-11-14T12:20:16",
+        "endTheDayAt": "2026-11-14T18:35:53",
+        "bedTime": "2026-11-14T21:00:00"
+    },
+    "2026-11-07": {
+        "bedTime": "2026-11-07T20:30:00",
+        "wakeUpTime": "2026-11-07T06:10:00",
+        "startTheDayAt": "2026-11-07T12:00:17"
     },
     "2026-10-06": {
         "startTheDayAt": "2026-10-06T11:58:43",
@@ -229,6 +258,18 @@
         "bedTime": "2026-09-28T21:20:00",
         "lastPlugPhoneAt": "2026-09-28T21:18:11"
     },
+    "2026-11-15": {
+        "endTheDayAt": "2026-11-15T19:05:08",
+        "wakeUpTime": "2026-11-15T04:15:00",
+        "startTheDayAt": "2026-11-15T12:58:24"
+    },
+    "2026-11-08": {
+        "startTheDayAt": "2026-11-08T11:59:44",
+        "wakeUpTime": "2026-11-08T04:20:00",
+        "firstUnplugPhoneAt": "2026-11-08T11:34:17",
+        "endTheDayAt": "2026-11-08T18:29:33",
+        "bedTime": "2026-11-08T23:40:00"
+    },
     "2026-10-21": {
         "startTheDayAt": "2026-10-21T12:02:56",
         "wakeUpTime": "2026-10-21T05:45:00",
@@ -260,6 +301,12 @@
         "endTheDayAt": "2026-09-29T20:16:44",
         "bedTime": "2026-09-29T23:00:00",
         "lastPlugPhoneAt": "2026-09-29T20:50:13"
+    },
+    "2026-11-09": {
+        "endTheDayAt": "2026-11-09T19:42:37",
+        "wakeUpTime": "2026-11-09T06:25:00",
+        "bedTime": "2026-11-09T21:30:00",
+        "lastPlugPhoneAt": "2026-11-09T19:46:41"
     },
     "2026-10-22": {
         "endTheDayAt": "2026-10-22T18:22:09",
@@ -311,14 +358,6 @@
         "bedTime": "2026-10-09T21:00:00",
         "lastPlugPhoneAt": "2026-10-09T20:59:30"
     },
-    "2026-09-10": {
-        "startTheDayAt": "2026-09-10T12:29:54",
-        "wakeUpTime": "2026-09-10T06:00:00",
-        "firstUnplugPhoneAt": "2026-09-10T06:36:57",
-        "endTheDayAt": "2026-09-10T18:47:08",
-        "bedTime": "2026-09-10T21:00:00",
-        "lastPlugPhoneAt": "2026-09-10T19:51:16"
-    },
     "2026-10-31": {
         "startTheDayAt": "2026-10-31T13:49:17",
         "wakeUpTime": "2026-10-31T03:50:00",
@@ -340,14 +379,6 @@
         "bedTime": "2026-10-17T20:30:00",
         "lastPlugPhoneAt": "2026-10-17T20:29:36"
     },
-    "2026-09-11": {
-        "startTheDayAt": "2026-09-11T12:14:58",
-        "wakeUpTime": "2026-09-11T05:20:00",
-        "firstUnplugPhoneAt": "2026-09-11T11:46:55",
-        "endTheDayAt": "2026-09-11T20:02:32",
-        "bedTime": "2026-09-11T22:20:00",
-        "lastPlugPhoneAt": "2026-09-11T20:44:17"
-    },
     "2026-10-25": {
         "endTheDayAt": "2026-10-25T18:33:12",
         "wakeUpTime": "2026-10-25T04:25:00",
@@ -359,14 +390,6 @@
         "wakeUpTime": "2026-10-18T04:25:00",
         "firstUnplugPhoneAt": "2026-10-18T17:14:52",
         "bedTime": "2026-10-18T22:00:00"
-    },
-    "2026-09-12": {
-        "startTheDayAt": "2026-09-12T12:54:07",
-        "wakeUpTime": "2026-09-12T06:50:00",
-        "firstUnplugPhoneAt": "2026-09-12T07:13:50",
-        "endTheDayAt": "2026-09-12T20:06:31",
-        "bedTime": "2026-09-12T22:30:00",
-        "lastPlugPhoneAt": "2026-09-12T21:27:20"
     },
     "2026-10-26": {
         "startTheDayAt": "2026-10-26T12:30:35",
@@ -383,22 +406,6 @@
         "bedTime": "2026-10-19T20:55:00",
         "lastPlugPhoneAt": "2026-10-19T19:21:27"
     },
-    "2026-09-13": {
-        "startTheDayAt": "2026-09-13T13:00:10",
-        "wakeUpTime": "2026-09-13T06:15:00",
-        "firstUnplugPhoneAt": "2026-09-13T07:33:47",
-        "endTheDayAt": "2026-09-13T19:05:04",
-        "bedTime": "2026-09-13T21:50:00",
-        "lastPlugPhoneAt": "2026-09-13T19:16:28"
-    },
-    "2026-09-06": {
-        "startTheDayAt": "2026-09-06T11:50:44",
-        "wakeUpTime": "2026-09-06T05:45:00",
-        "firstUnplugPhoneAt": "2026-09-06T06:53:06",
-        "endTheDayAt": "2026-09-06T20:29:43",
-        "bedTime": "2026-09-06T23:40:00",
-        "lastPlugPhoneAt": "2026-09-06T21:16:50"
-    },
     "2026-09-20": {
         "startTheDayAt": "2026-09-20T15:19:25",
         "wakeUpTime": "2026-09-20T07:45:00",
@@ -414,27 +421,15 @@
         "endTheDayAt": "2026-10-27T18:49:22",
         "bedTime": "2026-10-27T22:30:00"
     },
-    "2026-09-07": {
-        "startTheDayAt": "2026-09-07T14:20:30",
-        "wakeUpTime": "2026-09-07T08:00:00",
-        "firstUnplugPhoneAt": "2026-09-07T10:57:59",
-        "endTheDayAt": "2026-09-07T18:06:47",
-        "bedTime": "2026-09-07T20:30:00",
-        "lastPlugPhoneAt": "2026-09-07T18:22:09"
-    },
-    "2026-09-14": {
-        "startTheDayAt": "2026-09-14T12:31:09",
-        "wakeUpTime": "2026-09-14T07:15:00",
-        "firstUnplugPhoneAt": "2026-09-14T12:00:43",
-        "endTheDayAt": "2026-09-14T19:15:49",
-        "bedTime": "2026-09-14T21:00:00",
-        "lastPlugPhoneAt": "2026-09-14T20:43:02"
-    },
     "2026-09-21": {
         "startTheDayAt": "2026-09-21T19:29:10",
         "wakeUpTime": "2026-09-21T09:00:00",
         "firstUnplugPhoneAt": "2026-09-21T14:55:14",
         "bedTime": "2026-09-21T21:40:00"
+    },
+    "2026-11-01": {
+        "bedTime": "2026-11-01T21:00:00",
+        "firstUnplugPhoneAt": "2026-11-01T12:46:26"
     },
     "2026-10-28": {
         "startTheDayAt": "2026-10-28T12:25:17",
@@ -443,9 +438,5 @@
         "endTheDayAt": "2026-10-28T18:42:29",
         "bedTime": "2026-10-28T22:05:00",
         "lastPlugPhoneAt": "2026-10-28T21:23:08"
-    },
-    "2026-11-01": {
-        "bedTime": "2026-11-01T21:00:00",
-        "firstUnplugPhoneAt": "2026-11-01T12:46:26"
     }
 }
